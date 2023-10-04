@@ -9,13 +9,7 @@ const playerRoutes = require("./api/routes/players");
 const teamRoutes = require('./api/routes/teams');
 
 mongoose.connect(
-  "mongodb://node-shop:" +
-    process.env.MONGO_ATLAS_PW +
-    //todo: here I coonect with database
-    ",,",
-  {
-    useMongoClient: true
-  }
+    "mongodb://localhost:27017/cricket-World-Cup"
 );
 mongoose.Promise = global.Promise;
 
